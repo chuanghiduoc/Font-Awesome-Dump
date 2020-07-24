@@ -56,16 +56,16 @@ var sha = removeDuplicate[0].sha,
   ver = removeDuplicate[0].ver;
 
 $(".ver").text(ver);
-$("#a").val(`<link href="https://cdn.jsdelivr.net/gh/chuanghiduoc/font-awesome@${sha}/css/all.css" rel="stylesheet" type="text/css" />`);
-$("#c").val(`<link href="https://cdn.staticaly.com/gh/chuanghiduoc/font-awesome/${sha}/css/all.css" rel="stylesheet" type="text/css" />`);
-$("#e").val(`<link href="https://rawcdn.githack.com/chuanghiduoc/font-awesome/${sha}/css/all.css" rel="stylesheet" type="text/css" />`);
-$("head").append(`<link href="https://cdn.jsdelivr.net/gh/chuanghiduoc/font-awesome@${sha}/css/all.css" rel="stylesheet" type="text/css" />`);
+$("#a").val(`<link href="https://cdn.jsdelivr.net/gh/chuanghiduoc/font-awesome@${sha}/css/all.min.css" rel="stylesheet" type="text/css" />`);
+$("#c").val(`<link href="https://cdn.staticaly.com/gh/chuanghiduoc/font-awesome/${sha}/css/all.min.css" rel="stylesheet" type="text/css" />`);
+$("#e").val(`<link href="https://rawcdn.githack.com/chuanghiduoc/font-awesome/${sha}/css/all.min.css" rel="stylesheet" type="text/css" />`);
+$("head").append(`<link href="https://cdn.jsdelivr.net/gh/chuanghiduoc/font-awesome@${sha}/css/all.min.css" rel="stylesheet" type="text/css" />`);
 
 $("body").on("select2:select", "#list-versions", function() {
   var _sha = $(this).val();
-  $("#a").val(`<link href="https://cdn.jsdelivr.net/gh/chuanghiduoc/font-awesome@${_sha}/css/all.css" rel="stylesheet" type="text/css" />`);
-  $("#c").val(`<link href="https://cdn.staticaly.com/gh/chuanghiduoc/font-awesome/${_sha}/css/all.css" rel="stylesheet" type="text/css" />`);
-  $("#e").val(`<link href="https://rawcdn.githack.com/chuanghiduoc/font-awesome/${_sha}/css/all.css" rel="stylesheet" type="text/css" />`);
+  $("#a").val(`<link href="https://cdn.jsdelivr.net/gh/chuanghiduoc/font-awesome@${_sha}/css/all.min.css" rel="stylesheet" type="text/css" />`);
+  $("#c").val(`<link href="https://cdn.staticaly.com/gh/chuanghiduoc/font-awesome/${_sha}/css/all.min.css" rel="stylesheet" type="text/css" />`);
+  $("#e").val(`<link href="https://rawcdn.githack.com/chuanghiduoc/font-awesome/${_sha}/css/all.min.css" rel="stylesheet" type="text/css" />`);
 });
 
 $("body").on("select2:select", "#archive", function() {
